@@ -1,0 +1,439 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
+    color: #334155;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Section Headers */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.section-header svg {
+    color: #0f172a;
+}
+
+.section-header h2 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: #0f172a;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom right, #f8fafc, #f1f5f9);
+    padding: 5rem 1.5rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-image {
+    flex-shrink: 0;
+}
+
+.profile-photo {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border: 4px solid #fff;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.hero-text .subtitle {
+    font-size: 1.25rem;
+    color: #475569;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text .bio {
+    color: #334155;
+    max-width: 42rem;
+    margin-bottom: 2rem;
+    line-height: 1.625;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: #0f172a;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #1e293b;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+}
+
+.btn-secondary:hover {
+    background-color: #f8fafc;
+}
+
+/* About Section */
+.about {
+    padding: 5rem 1.5rem;
+    background-color: #fff;
+}
+
+.about-content {
+    display: grid;
+    gap: 3rem;
+    align-items: start;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+    font-size: 1.125rem;
+    color: #334155;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+.skills-section {
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 1.5rem;
+}
+
+.skills-section h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-tag {
+    padding: 0.5rem 1rem;
+    background-color: #0f172a;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Experience Section */
+.experience {
+    padding: 5rem 1.5rem;
+    background-color: #fff;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid #e2e8f0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -0.5rem;
+    top: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #0f172a;
+}
+
+.timeline-content {
+    background-color: #f8fafc;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.timeline-content:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.job-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.job-header h3 {
+    font-size: 1.5rem;
+    color: #0f172a;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.job-header .company {
+    color: #475569;
+}
+
+.job-header .period {
+    color: #64748b;
+}
+
+.job-description {
+    color: #334155;
+    margin-bottom: 1rem;
+}
+
+.achievements {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.achievements li {
+    color: #334155;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.achievements li::before {
+    content: '\2022';
+    color: #94a3b8;
+    position: absolute;
+    left: 0;
+}
+
+/* Education & Certifications Section */
+.education-certs {
+    padding: 5rem 1.5rem;
+    background-color: #f8fafc;
+}
+
+.edu-certs-grid {
+    display: grid;
+    gap: 4rem;
+}
+
+.education .section-header h2,
+.certifications .section-header h2 {
+    font-size: 1.875rem;
+}
+
+.edu-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.edu-card h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.edu-card .school {
+    color: #334155;
+    margin-bottom: 0.25rem;
+}
+
+.edu-card .period {
+    color: #64748b;
+}
+
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cert-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #0f172a;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cert-card h3 {
+    font-size: 1.125rem;
+    color: #0f172a;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.cert-card .issuer {
+    color: #475569;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.cert-card .date {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+/* Hobbies Section */
+.hobbies {
+    padding: 5rem 1.5rem;
+    background-color: #fff;
+}
+
+.hobbies-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.hobby-card {
+    background-color: #f8fafc;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.hobby-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #0f172a;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.hobby-icon svg {
+    color: #fff;
+}
+
+.hobby-card h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.hobby-card p {
+    color: #334155;
+    line-height: 1.625;
+}
+
+/* Footer */
+.footer {
+    background-color: #0f172a;
+    color: #fff;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.footer .copyright {
+    color: #94a3b8;
+}
+
+.footer .tagline {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+    .hobbies-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .job-header {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .hero-buttons {
+        justify-content: flex-start;
+    }
+
+    .about-content {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .edu-certs-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
